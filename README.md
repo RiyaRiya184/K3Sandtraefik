@@ -13,7 +13,7 @@
 - Launch instance
   
 ## Launched EC2 Instance
-![LaunchedEC2instance](images1/ec2instance.png)
+![LaunchedEC2instance](https://github.com/gaoharimran29-glitch/K3sandtraefik/blob/dfdeca3b08a2464bd75c088a24eeaf3c4c5f604f/images1/ec2instance.png)
 
 ### 2. Connect to EC2 (using PuTTY/SSH)  
 - Download Putty.exe file and install it in your device.
@@ -121,7 +121,7 @@ sudo kubectl apply -f ingress.yaml
 ```
 - To check browse your EC2 public ip in browser if nginx page is showing then it means its working.
 
-![NginxDeployed](images1/webnotsecure1.png)
+![NginxDeployed](https://github.com/gaoharimran29-glitch/K3sandtraefik/blob/dfdeca3b08a2464bd75c088a24eeaf3c4c5f604f/images1/webnotsecure1.png)
 
 ### 8. Map Domain with Route 53  
 
@@ -130,19 +130,19 @@ sudo kubectl apply -f ingress.yaml
 - You will get four NS name server.
 - Then update these name server in your domain.
 
-![Nameserver](images1/domainnameserver.png)
+![Nameserver](https://github.com/gaoharimran29-glitch/K3sandtraefik/blob/dfdeca3b08a2464bd75c088a24eeaf3c4c5f604f/images1/domainnameserver.png)
 
 - Create two records in route 53 hosted zone
   
-![Records](images1/route53record.png)
+![Records](https://github.com/gaoharimran29-glitch/K3sandtraefik/blob/dfdeca3b08a2464bd75c088a24eeaf3c4c5f604f/images1/route53record.png)
 
 - First record subdomain should be blank to point route domain.
 - Second record subdomain should be www .
 - Set your domain, Enter your allotted Public IP and then Map it.
 - To check , browse your domain name in browser if nginx page is showing then it means its working.
 
-![Domainnotsecured](images1/domain1notsecure.png)
-![Domainnotsecured](images1/domain2notsecure.png)
+![Domainnotsecured](https://github.com/gaoharimran29-glitch/K3sandtraefik/blob/dfdeca3b08a2464bd75c088a24eeaf3c4c5f604f/images1/domain1notsecure.png)
+![Domainnotsecured](https://github.com/gaoharimran29-glitch/K3sandtraefik/blob/dfdeca3b08a2464bd75c088a24eeaf3c4c5f604f/images1/domain2notsecure.png)
 
 # Making it secure 
 
@@ -278,11 +278,11 @@ sudo kubectl get secret nginx-cert
 ```
 - It will show like this
 
-![certgenerated](images1/certissued.png)
+![certgenerated](https://github.com/gaoharimran29-glitch/K3sandtraefik/blob/dfdeca3b08a2464bd75c088a24eeaf3c4c5f604f/images1/certissued.png)
 
 - Now browse you domain and subdomain and you will see both gets secured
 
-![secuedweb](images1/websitesecured.png)
+![secuedweb](https://github.com/gaoharimran29-glitch/K3sandtraefik/blob/dfdeca3b08a2464bd75c088a24eeaf3c4c5f604f/images1/websitesecured.png)
 
 - If it still not showing then you should try in incognito mode because sometimes browser is caching old certificate
   
@@ -413,4 +413,4 @@ sudo kubectl rollout restart deployment nginx-deployment
 ### Access your website 
 - Now you’ll see your custom HTML instead of default Nginx page.
 
-![finalsite](images1/final.png)
+![finalsite](https://github.com/gaoharimran29-glitch/K3sandtraefik/blob/dfdeca3b08a2464bd75c088a24eeaf3c4c5f604f/images1/final.png)
