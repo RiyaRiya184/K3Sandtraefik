@@ -205,7 +205,7 @@ metadata:
     cert-manager.io/cluster-issuer: "letsencrypt-http"
 spec:
   rules:
-  - host: imranx.dpdns.org
+  - host: madhu.dpdns.org
     http:
       paths:
       - path: /
