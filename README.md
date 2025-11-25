@@ -227,7 +227,7 @@ spec:
               number: 80
   tls:
   - hosts:
-    - imranx.dpdns.org
+    - madhu.dpdns.org
     - www.madhu.dpdns.org
     secretName: nginx-cert
 ```
