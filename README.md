@@ -215,7 +215,7 @@ spec:
             name: nginx-service
             port:
               number: 80
-  - host: www.imranx.dpdns.org
+  - host: www.madhu.dpdns.org
     http:
       paths:
       - path: /
@@ -228,7 +228,7 @@ spec:
   tls:
   - hosts:
     - imranx.dpdns.org
-    - www.imranx.dpdns.org
+    - www.madhu.dpdns.org
     secretName: nginx-cert
 ```
 - Press Ctrl+C and then type ":wq" and press Enter
